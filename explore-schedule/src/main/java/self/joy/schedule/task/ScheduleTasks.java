@@ -15,6 +15,7 @@ public class ScheduleTasks {
 
     @Scheduled(fixedRate = 5000)
     public void taskA() {
+        log.info("hell task");
         log.info("good!!");
     }
 
