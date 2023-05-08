@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: explore-schedule
+
+server:
+  port: 9001
+
+schedule-time:
+  taskA: 300
