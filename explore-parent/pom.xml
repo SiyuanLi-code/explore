@@ -23,11 +23,11 @@
 
         <druid-spring-boot.version>1.2.11</druid-spring-boot.version>
         <mybatis-spring-boot.version>2.2.2</mybatis-spring-boot.version>
-        <postgre.version>42.4.1</postgre.version>
+        <postgre.version>42.6.0</postgre.version>
 
         <lombok.version>1.18.24</lombok.version>
         <hutool.version>5.5.8</hutool.version>
-        <mybatis-plus-starter.version>3.5.2</mybatis-plus-starter.version>
+        <mybatis-plus-starter.version>3.5.3.1</mybatis-plus-starter.version>
     </properties>
 
 
@@ -39,6 +39,12 @@
                 <version>${spring-boot-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>

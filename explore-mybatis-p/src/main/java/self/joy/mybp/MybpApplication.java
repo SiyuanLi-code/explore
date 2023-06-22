@@ -1,4 +1,4 @@
-package self.joy.schedule;
+package self.joy.mybp;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -8,9 +8,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @MapperScan("self.joy.common.mapper")
 @SpringBootApplication
 @EnableScheduling
-public class ScheduleTaskApplication {
+public class MybpApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ScheduleTaskApplication.class);
+        SpringApplication.run(MybpApplication.class);
     }
 }
