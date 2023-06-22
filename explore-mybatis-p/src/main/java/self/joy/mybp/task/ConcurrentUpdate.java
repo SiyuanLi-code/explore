@@ -11,9 +11,9 @@ import self.joy.common.mapper.IClassroomMapper;
 @Component
 public class ConcurrentUpdate extends ServiceImpl<IClassroomMapper, Classroom> {
 
-    @Scheduled(cron = "0 03,04,05 11 * * ?")
+    @Scheduled(cron = "0 15 16 * * ?")
     public void updateSomething() {
-        this.lambdaUpdate().eq(Classroom::getId, 30).set(Classroom::getSize, 1).update();
+        this.lambdaUpdate().eq(Classroom::getId, 0).set(Classroom::getSize, 31).update();
         log.info("更新完毕");
     }
 }
