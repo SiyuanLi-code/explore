@@ -6,6 +6,17 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: 123456
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      #连接池配置
+      lettuce:
+        pool:
+          enabled: true
+          max-active: 8
+          max-wait: 10s
+
 
 server:
   port: 9002
